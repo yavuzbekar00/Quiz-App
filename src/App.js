@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Quiz from './Components/Quiz/Quiz';
 
 function App() {
+  const [questions, setQuestions] = useState([
+    {
+      id: 1,
+      question: "Hangisi web ön yüz gelştirici araçlarından değildir?",
+      a: "React",
+      b: "Html",
+      c: "Javascript",
+      d: "MSQL",
+      correct: "d"
+    }
+  ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Quiz questions={questions}></Quiz>
     </div>
   );
 }

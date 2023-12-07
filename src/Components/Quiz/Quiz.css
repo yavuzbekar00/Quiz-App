@@ -1,0 +1,27 @@
+.question-card {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.question {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.answers-card {
+    margin-top: 30px;
+}
+
+.answers {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.answer {
+    font-size: 20px;
+    margin-left: 5px;
+}
