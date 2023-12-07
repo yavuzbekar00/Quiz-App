@@ -1,9 +1,12 @@
 .question-card {
     width: 500px;
-    height: 500px;
-    background-color: rgb(196, 196, 196);
+    height: 400px;
+    background-color: rgb(243, 240, 182);
     border-radius: 5px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .question {
@@ -24,4 +27,59 @@
 .answer {
     font-size: 20px;
     margin-left: 5px;
+}
+
+.transition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.previous,
+.next {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(243, 240, 182);
+    border-radius: 5px;
+    border: none;
+}
+
+.previous:hover,
+.next:hover {
+    transition: all .4s;
+    cursor: pointer;
+    background-color: rgb(191, 186, 95);
+}
+
+.answer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.answer-button button {
+    padding: 10px 50px;
+    font-size: 18px;
+    background-color: black;
+    color: rgb(243, 240, 182);
+    border: none;
+    border-radius: 5px;
+}
+
+.answer-button button:hover {
+    transition: all .4s;
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+}
+
+.score {
+    color: rgb(243, 240, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
 }
